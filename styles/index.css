@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: url(images/stars2.jpg);
+  background-position: left;
+}
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --white-text-logo: white;
+  --underline-yellow: rgb(255, 255, 0);
+  --orange: rgb(206, 116, 0);
+}
+
+nav {
+  height: 100vh;
+  background-image: url(/images/rongad.jpg);
+  background-size: cover;
+  background-position: right;
+}
+
+.PlanetLogo {
+  height: 75px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  transition: background-color 300ms ease-out;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu.add {
+  background-color: rgb(14, 14, 14);
+}
+
+li {
+  text-decoration: none;
+  font-size: clamp(1.75rem, 1.5vw, 3rem);
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--white-text-logo);
+
+  text-decoration: underline 0.2rem rgba(255, 255, 255, 0);
+  transition: 250ms ease-in-out;
+}
+
+.active, li:hover {
+  /* text-decoration-color: rgb(255, 255, 0); */
+  text-decoration: underline 0.2rem var(--underline-yellow);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2.5rem;
+  /* padding: 2rem; */
+}
+
+
+.cosmicWonders {
+  color: var(--white-text-logo);
+  /* font-size: calc(6vw + 15px); */
+  font-size: calc(5vw + 2rem); /* 7rem */
+  font-weight: bold;
+  text-align: center;
+}
+
+.Container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 75px);
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 4rem;
+  animation: bounce 2s infinite;
+  z-index: 0;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(10px);} 
+  40% {transform: translateY(-75px);} 
+  60% {transform: translateY(-35px);} 
+} 
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: calc(100vh - 792px); */
+}
+
+
+.planeetJaTekst > img {
+  /* width: 80%; */
+  width: clamp(250px, 50%, 75%);
+  height: auto;
+}
+
+
+.planetText {
+  color: var(--white-text-logo);
+  font-size: calc(4vw + 2rem);
+  font-weight: bold;
+}
+
+.fact > p {
+  color: white;
+  /* background-color: gray; */
+  padding: 10px;
+  width: min(35vw, 400px);
+  font-size: max(1vw, 14px);
+  border-radius: 10px;
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  text-align: center;
+  /* padding: 80px; */
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(75%);
+  transition: transform 350ms ease-in-out, opacity 350ms ease-in;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden:nth-child(2) {
+  transition-delay: 75ms;
+}
+.hidden:nth-child(3) {
+  transition-delay: 150ms;
+}
+.hidden:nth-child(4) {
+  transition-delay: 225ms;
+}
+
+.planeetJaTekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  /* outline: 1px red solid; */
+  gap: 2rem;
+}
+
+
+
+
+
+.circle {
+  background-color: rgb(210, 210, 210);
+  position: relative;
+  min-width: auto;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.sidebar {
+  position: fixed;
+  width: auto;
+  background-color: var(--orange);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  right: 0;
+  transform: translate(0, -50%);
+  top: 50%;
+  padding: 10px;
+}
+
+
+
+.active2, .circle:hover {
+  background-color: blue;
+}
+
+
+
+
+
+
+.Container3 {
+  height: 100vh;
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px var(--underline-yellow) solid;
+  color: var(--white-text-logo);
+  font-size: 2rem;
+  padding: 40px;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 20px;
+}
+
+.icons > p {
+  font-size: 2rem;
+  color: var(--white-text-logo);
+}
+
+.icons > svg {
+  font-size: 2.5rem;
+}
+
+.Container3_1 {
+  width: 1400px;
+  padding: 50px;
+}
+
+/* Scroll effect */
+.kingContainer {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+section {
+  /* height: 100vh; */
+  scroll-snap-align: start;
+}
+
+
+
+
+/* menu icon */
+.cont {
+  display: none;
+}
+
+@media (width <= 650px) {
+.cont {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.oneBar, .twoBar, .threeBar {
+  width: 40px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: 75ms linear;
+}
+
+.oneBar.add {
+  transform: translate(0, 9px) rotate(45deg);
+}
+
+.threeBar.add {
+  transform: translate(0, -9px) rotate(-45deg);
+}
+
+.twoBar.add {
+  opacity: 0;
+}
+
+.nav-list {
+  display: none;
+}
+
+/* Planeetid ja tekst */
+.container {
+  padding: 0px;
+  flex-direction: column;
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+
+.fact > p {
+  width: 60vw
+}
+
+/* nav phone */
+.menu {
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+}
+
+.nav-list.showMenu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  position: absolute;
+  right: 20px;
+  top: 78px;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.nav-list.inverse {
+  background-color: rgba(68, 68, 68, 0.85);
+}
+
+}

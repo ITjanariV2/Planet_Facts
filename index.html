@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets!</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+    <script src="./script.js" defer></script>
+</head>
+<style>
+    @font-face {
+        font-family: "customfont";
+        src: url("PPStellar-Light.otf");
+    }
+
+    @font-face {
+        font-family: "customfontBOLD";
+        src: url("PPStellar-Bold.otf");
+    }
+</style>
+<body style="font-family: 'customfont';">
+<div class="kingContainer hideScroll">
+<section>
+<nav>
+<div class="menu" style="font-family: 'customfont';">
+
+    <img href="https://www.astrojanari.com/Planetary_Facts/" class="PlanetLogo" src="images/planet.svg">
+
+<ul class="nav-list" id="menu">
+
+    <li class="selectable active">
+        <a>Home</a>
+    </li>
+
+    <li class="selectable">
+        <a>About</a>
+    </li>
+
+    <li class="selectable">
+        <a>Contact</a>
+    </li>
+</ul>
+
+<div class="cont" onclick="random()">
+    <div class="oneBar"></div>
+    <div class="twoBar"></div>
+    <div class="threeBar"></div>
+  </div>
+
+</div>
+
+<div class="Container2">
+    <p class="cosmicWonders">Facts About Our Solar System</p>
+</div>
+
+<div class="arrowContainer">
+    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</div>
+
+</nav>
+</section>
+  
+<!-- Merkuur -->
+<section class="one">
+<div class="container">
+<div class="planeetJaTekst">
+    <p class="planetText">Mercury</p>
+    <img src="images/Merkuur.png">
+</div>
+
+<div class="fact">
+    <p style="background-color: #e5e5e574;">Average of 58 Milion Kilometers From the Sun</p>
+    <p style="background-color: #e5e5e574;">The length of a year is 88 Earth Days</p>
+    <p style="background-color: #e5e5e574;">Mercury is the Smallest Planet In Our Solar System</p>
+    <p style="background-color: #e5e5e574;">Radius of 2,439 Kilometers</p>
+</div>
+    
+</div>
+</section>
+
+<!-- Veenus -->
+<section>
+<div class="container">
+<div class="planeetJaTekst">
+    <p class="planetText">Venus</p>
+    <img src="images/Veenus.png">
+</div>
+
+<div class="fact">
+    <p style="background-color: #eecf53a3;">Average of 108 Milion Kilometers From the Sun</p>
+    <p style="background-color: #eecf53a3;">The Length of a year is 225 Earth Days.</p>
+    <p style="background-color: #eecf53a3;">Venus is the Hottest Planet: 464°C</p>
+    <p style="background-color: #eecf53a3;">Radius of 6,050 Kilometers</p>
+</div>
+
+</div>
+</section>
+
+<!-- Maa -->
+<section>
+<div class="container">
+<div class="planeetJaTekst">
+    <p class="planetText">Earth</p>
+    <img src="images/Maa.png">
+</div>
+
+<div class="fact">
+    <p style="background-color: #287AB8;">Average of 150 Milion Kilometers From the Sun</p>
+    <p style="background-color: #287AB8;">The Length of a year is 365 Days</p>
+    <p style="background-color: #287AB8;">1 Moon</p>
+    <p style="background-color: #287AB8;">Radius of 6,371 Kilometers</p>
+</div>
+
+</div>
+</section>
+
+<!-- Marss -->
+<section>
+<div class="container">
+<div class="planeetJaTekst">
+    <p class="planetText">Mars</p>
+    <img src="images/Marss.png">
+</div>
+
+<div class="fact">
+    <p style="background-color: #ad6242;">Average of 228 Milion Kilometers From the Sun</p>
+    <p style="background-color: #ad6242;">The Length of a year is 687 Earth Days.</p>
+    <p style="background-color: #ad6242;">2 Moons</p>
+    <p style="background-color: #ad6242;">Radius of 3,390 Kilometers</p>
+</div>
+
+</div>
+</section>
+
+<!-- Jupiter -->
+<section>
+<div class="container">
+<div class="planeetJaTekst">
+    <p class="planetText">Jupiter</p>
+    <img src="images/Jupiter.png">
+</div>
+
+<div class="fact">
+    <p style="background-color: #c99039;">Average of 778 Milion Kilometers From the Sun</p>
+    <p style="background-color: #c99039;">The Length of a year is 4,333 Earth Days.</p>
+    <p style="background-color: #c99039;">Over 80 Moons</p>
+    <p style="background-color: #c99039;">Radius of 71,492 Kilometers</p>
+</div>
+
+</div>
+</section>
+
+<!-- Saturn -->
+<section>
+<div class="container">
+<div class="planeetJaTekst">
+    <p class="planetText">Saturn</p>
+    <img src="images/Saturn.png"> <!-- olid 1140px -->
+</div>
+
+<div class="fact">
+    <p style="background-color: #dcc599b7;">Average of 1.4 Billion Kilometers From the Sun</p>
+    <p style="background-color: #dcc599b7;">The Length of a year is 10,759 Earth Days.</p>
+    <p style="background-color: #dcc599b7;">Over 83 Moons</p>
+    <p style="background-color: #dcc599b7;">Radius of 58,232 Kilometers</p>
+</div>
+
+</div>
+</section>
+
+<!-- Uraan -->
+<section>
+<div class="container">
+<div class="planeetJaTekst">
+    <p class="planetText">Uranus</p>
+    <img src="images/Uraan.png">
+</div>
+
+<div class="fact">
+    <p style="background-color: #ace5eea4;">Average of 2.9 Billion Kilometers From the Sun</p>
+    <p style="background-color: #ace5eea4;">The Length of a year is 30,687 Earth Days.</p>
+    <p style="background-color: #ace5eea4;">27 Moons</p>
+    <p style="background-color: #ace5eea4;">Radius of 25,362 Kilometers</p>
+</div>
+
+</div>
+</section>
+
+<!-- Neptuun -->
+<section>
+<div class="container">
+<div class="planeetJaTekst">
+    <p class="planetText">Neptune</p>
+    <img src="images/Neptuun.png">
+</div>
+
+<div class="fact">
+    <p style="background-color: #007eace8;">Average of 4.5 Billion Kilometers From the Sun</p>
+    <p style="background-color: #007eace8;">The Length of a year is 60,687 Earth Days.</p>
+    <p style="background-color: #007eace8;">14 Moons</p>
+    <p style="background-color: #007eace8;">Radius of 24,622 Kilometers</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="Container3">
+ <div class="Container3_1">
+    <div class="icons">
+        <p>More About Me &#8594;</p>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>    
+    </div>
+    <!-- <div class="copyright"> -->
+        <p class="copyright">© 2023 Janari Štšerbina</p>
+    <!-- </div> -->
+    </div>
+ </div>
+</div>
+</section>
+</div>
+</body>
+</html>
