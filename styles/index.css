@@ -7,7 +7,7 @@
 body {
   overflow-y: hidden;
   overflow-x: hidden;
-  background-position: left;
+  background-size: cover;
 }
 
 .hideScroll::-webkit-scrollbar {
@@ -108,7 +108,6 @@ li {
 
 
 .planeetJaTekst > img {
-  /* width: 80%; */
   width: clamp(250px, 50%, 75%);
   height: auto;
 }
@@ -139,7 +138,7 @@ li {
 
 .hidden {
   opacity: 0;
-  transform: translateX(75%);
+  transform: translateY(25px);
   transition: transform 350ms ease-in-out, opacity 350ms ease-in;
 }
 
@@ -163,7 +162,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 .container {
   background-color: rgba(0, 0, 0, 0.65);
@@ -275,7 +274,7 @@ section {
   display: none;
 }
 
-@media (width <= 650px) {
+@media (width <= 1380px) {
 .cont {
   display: flex;
   flex-direction: column;
@@ -320,7 +319,7 @@ section {
 }
 
 .fact > p {
-  width: 60vw
+  width: 50vw
 }
 
 /* nav phone */
@@ -349,4 +348,8 @@ section {
   background-color: rgba(68, 68, 68, 0.85);
 }
 
+/* Planet image */
+.planeetJaTekst > img {
+  width: clamp(250px, 30%, 75%);
+}
 }
