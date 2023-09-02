@@ -94,7 +94,7 @@ li {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {transform: translateY(10px);} 
+  0%, 20%, 50%, 80%, 100% {transform: translateY(20px);} 
   40% {transform: translateY(-75px);} 
   60% {transform: translateY(-35px);} 
 } 
@@ -103,6 +103,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 65px;
   /* height: calc(100vh - 792px); */
 }
 
@@ -319,7 +321,7 @@ section {
 }
 
 .fact > p {
-  width: 50vw
+  width: 40vw
 }
 
 /* nav phone */
@@ -338,7 +340,7 @@ section {
   position: absolute;
   right: 20px;
   top: 78px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.75);
@@ -352,4 +354,10 @@ section {
 .planeetJaTekst > img {
   width: clamp(250px, 30%, 75%);
 }
+}
+
+@media (width <= 550px) {
+  .fact > p {
+    width: 80vw
+  }
 }
