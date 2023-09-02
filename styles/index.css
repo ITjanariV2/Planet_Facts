@@ -7,7 +7,6 @@
 body {
   overflow-y: hidden;
   overflow-x: hidden;
-  background: url(./images/stars2.jpg);
   background-position: left;
 }
 
@@ -23,7 +22,6 @@ body {
 
 nav {
   height: 100vh;
-  background-image: url(./images/rongad.jpg);
   background-size: cover;
   background-position: right;
 }
